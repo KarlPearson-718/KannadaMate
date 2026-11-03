@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KannadaMate</title>
+  <meta name="theme-color" content="#8b0000" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon.svg" />
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,sans-serif;background:#faf6ee;color:#222}
+    header{background:#8b0000;color:#fff;padding:14px 16px;display:flex;justify-content:space-between;align-items:center}
+    header h1{margin:0;font-size:20px}
+    nav{display:flex;background:#fff;border-bottom:3px solid #ffd700;position:sticky;top:0}
+    nav button{flex:1;padding:12px 4px;border:0;background:none;font-size:14px;cursor:pointer}
+    nav button.on{font-weight:700;color:#8b0000;border-bottom:3px solid #8b0000}
+    main{max-width:560px;margin:0 auto;padding:16px}
+    .card{background:#fff;border-radius:12px;padding:16px;margin-bottom:12px;box-shadow:0 1px 4px #0002}
+    .kn{font-size:26px;margin:0 0 4px}
+    .tr{color:#8b0000;font-weight:600;margin:0 0 4px}
+    .mean{color:#555;margin:0 0 10px}
+    button.btn{background:#8b0000;color:#fff;border:0;border-radius:8px;padding:10px 14px;margin:2px 4px 2px 0;font-size:14px;cursor:pointer}
+    button.alt{background:#fff;color:#8b0000;border:2px solid #8b0000}
+    .good{color:#1a7f37}.almost{color:#b7791f}.retry{color:#c53030}
+    .bubble{background:#fff3c4;border-radius:12px;padding:12px;margin-bottom:10px}
+  </style>
+</head>
+<body>
+  <header><h1>KannadaMate</h1><span id="streak"></span></header>
+  <nav id="nav"></nav>
+  <main id="app"></main>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
